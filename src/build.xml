@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="283Project2">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="283Project2.classpath">
+        <pathelement location="."/>
+        <pathelement location="../jars/activation-1.1.jar"/>
+        <pathelement location="../jars/axis.jar"/>
+        <pathelement location="../jars/axis2-ant-plugin-1.6.1.jar"/>
+        <pathelement location="../jars/commons-discovery-0.2.jar"/>
+        <pathelement location="../jars/commons-httpclient-3.1-beta1.jar"/>
+        <pathelement location="../jars/commons-logging-1.1.1.jar"/>
+        <pathelement location="../jars/dom4j-1.6.1.jar"/>
+        <pathelement location="../jars/javacImpl-0.9.jar"/>
+        <pathelement location="../jars/jaxrpc.jar"/>
+        <pathelement location="../jars/jsp-api.jar"/>
+        <pathelement location="../jars/mail.jar"/>
+        <pathelement location="../jars/pingservice.jar"/>
+        <pathelement location="../jars/saaj.jar"/>
+        <pathelement location="../jars/serverpool.jar"/>
+        <pathelement location="../jars/servlet-api.jar"/>
+        <pathelement location="../jars/vijava2120100824.jar"/>
+        <pathelement location="../jars/wsdl4j.jar"/>
+        <pathelement location="../jars/xml-apis.jar"/>
+        <pathelement location="../../../Jar/mongo-java-driver-2.10.0.jar"/>
+        <pathelement location="../../../Logstash/logstash-1.2.2-flatjar.jar"/>
+        <pathelement location="../jars/charts4j-1.3.jar"/>
+    </path>
+    <target name="init">
+        <copy includeemptydirs="false" todir=".">
+            <fileset dir=".">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="." includeantruntime="false" source="${source}" target="${target}">
+            <src path="."/>
+            <classpath refid="283Project2.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="HelloVM">
+        <java classname="com.vmware.vim25.mo.samples.HelloVM" failonerror="true" fork="yes">
+            <classpath refid="283Project2.classpath"/>
+        </java>
+    </target>
+    <target name="LogCollection">
+        <java classname="project2.LogCollection" failonerror="true" fork="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="283Project2.classpath"/>
+        </java>
+    </target>
+    <target name="RunLogCollection">
+        <java classname="project2.RunLogCollection" failonerror="true" fork="yes">
+            <jvmarg line="-Xms512M -Xmx1024M"/>
+            <classpath refid="283Project2.classpath"/>
+        </java>
+    </target>
+    <target name="TestMongDB">
+        <java classname="TestMongDB" failonerror="true" fork="yes">
+            <classpath refid="283Project2.classpath"/>
+        </java>
+    </target>
+    <target name="project2Runner">
+        <java classname="project2.project2Runner" failonerror="true" fork="yes">
+            <classpath refid="283Project2.classpath"/>
+        </java>
+    </target>
+</project>

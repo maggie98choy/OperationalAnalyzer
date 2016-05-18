@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/axis.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/axis2-ant-plugin-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/commons-discovery-0.2.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/commons-httpclient-3.1-beta1.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/javacImpl-0.9.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/jaxrpc.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/jsp-api.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/mail.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/pingservice.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/saaj.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/serverpool.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/vijava2120100824.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/wsdl4j.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/xml-apis.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/Jar/mongo-java-driver-2.10.0.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/Logstash/logstash-1.2.2-flatjar.jar"/>
+	<classpathentry kind="lib" path="/Users/maggie/Documents/workspace/283Project2/jars/charts4j-1.3.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
